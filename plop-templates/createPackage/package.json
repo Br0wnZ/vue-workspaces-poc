@@ -1,0 +1,23 @@
+{
+    "version": "0.0.0",
+    "main": "./index.tsx",
+    "types": "./index.tsx",
+    "license": "MIT",
+    "scripts":{
+      "storybook": "start-storybook -p 6007",
+      "build-storybook": "build-storybook"
+    },
+    "exports": {
+          "import": "./index.ts"
+      },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.0.0",
+        "typescript": "^4.4.4",
+        "vite": "^2.7.2",
+        "vue-tsc": "^0.29.8",
+        "@storybook/addon-actions": "^6.5.0-alpha.22",
+        "@storybook/addon-essentials": "^6.5.0-alpha.22",
+        "@storybook/addon-links": "^6.5.0-alpha.22",
+        "@storybook/vue3": "^6.5.0-alpha.22"
+      }
+}

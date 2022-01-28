@@ -1,0 +1,27 @@
+
+// TODO must be capitalize
+import {{component}} from './{{component}}.vue';
+
+export default {
+  component: {{component}},
+  //👇 Our exports that end in "Data" are not stories.
+  excludeStories: /.*Data$/,
+  title: 'Iberpay/{{component}}',
+ 
+};
+
+export const actionsData = {
+ 
+};
+
+const Template = args => ({
+  components: { {{component}} },
+  setup() {
+    return { args, ...actionsData };
+  },
+  template: '<{{component}} v-bind="args" />',
+});
+export const Default = Template.bind({});
+Default.args = {
+
+};
